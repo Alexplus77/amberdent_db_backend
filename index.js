@@ -8,7 +8,7 @@ const uploadFileRouter = require("./Router/uploadFileRouter");
 const getListsRouter = require("./Router/getListsRouter");
 require("dotenv").config();
 const PORT = process.env.PORT || 8080;
-const URI = 'mongodb://alexsuf:Ab27021986@127.0.0.1:27017/amberdent_db'
+const URI = 'mongodb://alexsuf:Ab27021986@127.0.0.1:27017'
 
 const URI2="mongodb://127.0.0.1/amberdent";
 app.use(cors());
