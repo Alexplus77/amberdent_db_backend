@@ -7,7 +7,7 @@ const cors = require("cors");
 const uploadFileRouter = require("./Router/uploadFileRouter");
 const getListsRouter = require("./Router/getListsRouter");
 require("dotenv").config();
-const PORT = 5000;
+const PORT2 = 5000;
 const URI = 'mongodb://alexsuf:Ab27021986@127.0.0.1:27017'
 
 const URI2="mongodb://127.0.0.1/amberdent";
@@ -24,8 +24,8 @@ app.get("/*", (req, res) => {
 mongoose
   .connect(URI)
   .then(() =>
-    app.listen(PORT, () =>
-      console.log(`Server and mongoDB started on port: ${PORT}`),
+    app.listen(PORT2, () =>
+      console.log(`Server and mongoDB started on port: ${PORT2}`),
     ),
   )
   .catch((e) => console.log("Ошибка подключения к базе MONGO DB:", e));
