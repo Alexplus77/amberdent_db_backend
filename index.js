@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, "build")));
 app.use(uploadFileRouter);
 app.use(getListsRouter);
 app.get("/*", (req, res) => {
-  res.sendFile(`${__dirname}/index.html`);
+  res.sendFile(`${__dirname}/build/index.html`);
 });
 
 mongoose
