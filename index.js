@@ -8,9 +8,9 @@ const uploadFileRouter = require("./Router/uploadFileRouter");
 const getListsRouter = require("./Router/getListsRouter");
 require("dotenv").config();
 const PORT2 = 5000;
-const URI = 'mongodb://alexsuf:Ab27021986@127.0.0.1:27017'
+const URI1 = 'mongodb://alexsuf:Ab27021986@127.0.0.1:27017'
 
-const URI2="mongodb://127.0.0.1/amberdent";
+const URI="mongodb://127.0.0.1/amberdent";
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
